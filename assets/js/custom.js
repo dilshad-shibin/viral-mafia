@@ -58,10 +58,13 @@
     // SMOOTH SCROLLING ACTIVE CODE
     scrollLink.on('click', function (e) {
         e.preventDefault();
+        $('#main-menu').removeClass('show');
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top
         }, 1000);
     });
+
+
 
     // PREVENT DEFAULT ACTIVE CODE
     $("a[href='#']").on('click', function ($) {
@@ -119,6 +122,21 @@
             }
         }
     });
+
+    //menus closing
+    // $("nav-link").click(function(){
+    //     console.log('hai');
+    //     $('#main-menu').removeClass('show')
+    // })
+
+    //accordion
+    $(function (){
+        $(".accordion").find(".accordion-title").on("click", function(){
+        $(this).toggleClass("active"), $(this).next().slideToggle("fast"), $(".accordion-content").not(t(this).next()).slideUp("fast"),$(".accordion-title").not(t(this)).removeClass("active")
+        })
+    })
+
+    
 
 
 

@@ -835,3 +835,37 @@ img {
 .footer-bg{
     background-color: #131418 !important;
 }
+
+
+/* ******************************
+11. Popup AREA CSS
+****************************** */
+.modal-content{
+    overflow: hidden;
+}
+.modal-content:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #20c99627;
+    top: -50%;
+    right: -50%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-title{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1;
+    font-family: cursive;
+}
+
+.modal-header .close{
+    z-index: 2;
+}

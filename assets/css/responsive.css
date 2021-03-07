@@ -1,0 +1,45 @@
+@media(max-width: 460px){
+    .navbar-brand{
+        padding-top: 15px;
+    }
+    .navbar-brand .logo{
+        max-height: 30px;
+        height: 30px;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .overlay{
+        background-color: #063e3e;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.8;
+    }
+    .welcome-intro h1{
+        color: #fff;
+    }
+    .welcome-intro p{
+        color: #ccc;
+    }
+}
+@media (max-width: 767px){
+    #main-menu {
+        background-color: #f5f7fb;
+        -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 15%);
+        box-shadow: 0 3px 15px rgb(0 0 0 / 15%);
+        padding: 30px;
+        border-radius: 0 0 6px 6px;
+        max-height: 450px;
+        overflow: scroll;
+    }
+    .appointment-plan-area::before{
+        width: 100%;
+    }
+}
